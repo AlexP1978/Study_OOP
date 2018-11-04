@@ -196,6 +196,10 @@ namespace Study_OOP
             for (int i = 0; i < 3; i++)
                 Console.WriteLine($"{ cat1[i].name}");
 
+            Animal animal = dog1;
+            animal.name = "Sirko";
+            Dog dog2 = (Dog)animal;
+            Console.WriteLine($"\nThe name of dog is {dog2.name}");
 
             Console.Read();
 
